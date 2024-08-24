@@ -33,7 +33,7 @@
 "title": "1. Navigation bar",
 "overviewSubtitle": "Learn how to make a navigation bar",
 "detailSubtitle": "the first lesson where you learn the fundamentals",
-"description": "An App About Apps is about moving from developing ideas for needed apps to sketching and describing those ideas and creating app prototypes. If you wish, you can also work on learning to code in Swift, so you can eventually publish a real app on the App Store. Turn your visions and ideas into reality!",
+"description": "Build a navigation bar",
 "contentIdentifier": "com.github.appsbyralo.An-App-About-Apps.Navigation-bar",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io//Navigation-bar/Navigation-bar.swiftpm.zip",
