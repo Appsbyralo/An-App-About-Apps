@@ -36,11 +36,11 @@
 "description": "Build a navigation bar",
 "contentIdentifier": "com.github.appsbyralo.Navigation-bar",
 "contentVersion": "1.0",
-"url": "https://github.com/Appsbyralo/Navigation-bar/blob/main/1.%20Navigation-bar.swiftpm.zip",
+"url": "https://appsbyralo.github.io//Navigation-bar/Navigation-bar.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://github.com/Appsbyralo/Navigation-bar/blob/main/Thumbnail.png",
-"bannerImageURL": "https://github.com/Appsbyralo/Navigation-bar/blob/main/Banner.png",
+"thumbnailURL": " https://appsbyralo.github.io/Navigation-bar/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/Navigation-bar/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
@@ -48,7 +48,7 @@
 }
 ],
 "previewImageURLs": [
-"https://github.com/Appsbyralo/Navigation-bar/blob/main/Preview.png"
+"https://appsbyralo.github.io/Navigation-bar/Preview.png"
 ]
 }
 ]
