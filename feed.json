@@ -29,17 +29,16 @@
 ]
 },
 {
-
 "title": "1. Navigation bar",
 "overviewSubtitle": "Learn how to make a navigation bar",
 "detailSubtitle": "the first lesson where you learn the fundamentals",
 "description": "Build a navigation bar",
-"contentIdentifier": "com.github.appsbyralo.Navigation-bar",
+"contentIdentifier": "com.github.appsbyralo.An-App-About-Apps.Navigation-bar",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io//Navigation-bar/Navigation-bar.swiftpm.zip",
+"url": "https://appsbyralo.github.io/Navigation-bar/Navigation-bar.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": " https://appsbyralo.github.io/Navigation-bar/Thumbnail.png",
+"thumbnailURL": "https://appsbyralo.github.io/Navigation-bar/Thumbnail.png",
 "bannerImageURL": "https://appsbyralo.github.io/Navigation-bar/Banner.png",
 "additionalInformation": [
 {
