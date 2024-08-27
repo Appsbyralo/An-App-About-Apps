@@ -57,7 +57,7 @@
 "description": "An App About Apps is about moving from developing ideas for needed apps to sketching and describing those ideas and creating app prototypes. If you wish, you can also work on learning to code in Swift, so you can eventually publish a real app on the App Store. Turn your visions and ideas into reality!",
 "contentIdentifier": "com.github.appsbyralo.Stacks",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/Stacks/StacksEN.swiftpm.zip",
+"url": "https://github.com/Appsbyralo/Stacks/blob/main/StacksEN.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
 "thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Thumbnail.png",
