@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 60px;
+            margin: 40px;
             text-align: center;
             background: linear-gradient(to right, 
                         rgba(217, 201, 254, 1), 
@@ -29,25 +29,40 @@
             margin: 40px 0 20px;
             text-decoration: underline;
         }
-        .button {
-            display: inline-block;
-            margin: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: black; /* Updated text color */
-            background-color: white; /* Updated background color */
-            text-decoration: none;
-            border-radius: 5px;
+
+        button {
+            --b: 3px;   /* border thickness */
+            --s: .15em; /* size of the corner */
+            --c: #BD5532;
+            padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+            color: var(--c);
+            --_p: var(--s);
+            background:
+                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+            transition: .3s linear, color 0s, background-color 0s;
+            outline: var(--b) solid #0000;
+            outline-offset: .2em;
+            font-family: system-ui, sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: none;
+            margin: .1em;
             width: 280px; /* Fixed width */
             height: 60px; /* Fixed height */
-            line-height: 30px; /* Adjust line-height for vertical alignment */
-            text-align: center;
-            vertical-align: middle;
-            border: 1px solid black; /* Optional: adds a border to make the button stand out more */
         }
-        .button:hover {
-            background-color: #f1f1f1; /* Light grey on hover */
+        button:hover,
+        button:focus-visible {
+            --_p: 0px;
+            outline-color: var(--c);
+            outline-offset: .05em;
         }
+        button:active {
+            background: var(--c);
+            color: #fff;
+        }
+
         .dropdown {
             position: relative;
             display: inline-block;
@@ -93,12 +108,14 @@
     <div class="section">
         <div class="section-title">English Version</div>
     
-        <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json" class="button">
-            Subscribe to the App in Swift Playground
+        <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
+            <button>
+                Subscribe to the App in Swift Playground
+            </button>
         </a>
 
         <div class="dropdown">
-            <a href="#" class="button">Material in English</a>
+            <button>Material in English</button>
             <div class="dropdown-content">
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/An%20App%20About%20Apps%20-%20What%20is%20the%20app%20about%3F.pages" download>What is the app about?</a>
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/One%20Pager%20presentation.pages" download>One Pager</a>
@@ -117,10 +134,12 @@
     <div class="section">
         <div class="section-title">Dansk Version</div>
         
-        <a href="https://developer.apple.com/swift/" class="button">Abonner på appen i Swift Playground</a>
+        <a href="https://developer.apple.com/swift/">
+            <button>Abonner på appen i Swift Playground</button>
+        </a>
 
         <div class="dropdown">
-            <a href="#" class="button">Materiale på dansk</a>
+            <button>Materiale på dansk</button>
             <div class="dropdown-content">
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/blob/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om%3F%20.pages" download>Hvad handler appen om?</a>
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/blob/main/One%20Pager%20præsentation.pages" download>One Pager</a>
