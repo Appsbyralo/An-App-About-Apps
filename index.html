@@ -26,6 +26,34 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .button {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -36,14 +64,29 @@
         Subscribe to Swift Playground
     </a>
 
-    <!-- Button 2: Material in English -->
-    <a href="https://yourwebsite.com/english-material" class="button">
-        Material in English
-    </a>
+    <!-- Dropdown 1: Material in English -->
+    <div class="dropdown">
+        <a href="#" class="button">Material in English</a>
+        <div class="dropdown-content">
+            <a href="https://yourwebsite.com/english-material/file1.pdf">File 1</a>
+            <a href="https://yourwebsite.com/english-material/file2.pdf">File 2</a>
+            <a href="https://yourwebsite.com/english-material/file3.pdf">File 3</a>
+            <a href="https://yourwebsite.com/english-material/file4.pdf">File 4</a>
+            <a href="https://yourwebsite.com/english-material/file5.pdf">File 5</a>
+        </div>
+    </div>
 
-    <!-- Button 3: Material in Danish -->
-    <a href="https://yourwebsite.com/danish-material" class="button">
-        Material in Danish
-    </a>
+    <!-- Dropdown 2: Material in Danish -->
+    <div class="dropdown">
+        <a href="#" class="button">Material in Danish</a>
+        <div class="dropdown-content">
+            <a href="https://yourwebsite.com/danish-material/file1.pdf">Fil 1</a>
+            <a href="https://yourwebsite.com/danish-material/file2.pdf">Fil 2</a>
+            <a href="https://yourwebsite.com/danish-material/file3.pdf">Fil 3</a>
+            <a href="https://yourwebsite.com/danish-material/file4.pdf">Fil 4</a>
+            <a href="https://yourwebsite.com/danish-material/file5.pdf">Fil 5</a>
+        </div>
+    </div>
+
 </body>
 </html>
