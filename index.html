@@ -13,6 +13,11 @@
         h1 {
             margin-bottom: 50px;
         }
+        .section-title {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            text-decoration: underline;
+        }
         .button {
             display: inline-block;
             margin: 20px;
@@ -54,40 +59,58 @@
         .dropdown:hover .button {
             background-color: #0056b3;
         }
+        .section {
+            margin-bottom: 40px;
+        }
+        .divider {
+            border-top: 2px solid #ccc;
+            margin: 60px 0;
+        }
     </style>
 </head>
 <body>
     <h1>An App About Apps</h1>
 
-    <!-- Button 1: Swift Playground Subscription -->
-    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json" class="button">
-        Subscribe to Swift Playground
-    </a>
+    <div class="section">
+        <div class="section-title">English Version</div>
+        <!-- Button 1: Swift Playground Subscription -->
+        <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json" class="button">
+            Subscribe to Swift Playground
+        </a>
 
-    <!-- Dropdown 1: Material in English -->
-    <div class="dropdown">
-        <a href="#" class="button">Material in English</a>
-        <div class="dropdown-content">
-           <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/An%20App%20About%20Apps%20-%20What%20is%20the%20app%20about%3F.pages" download>What is the app about?</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/One%20Pager%20presentation.pages" download>One Pager</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Idea%20Compass.key.zip" download>Idea Compass 3</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/My%20favorite%20App.pages" download>My favorite app</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20iPad.key" download>iPad prototype</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20MacBook.key.zip" download>MacBook prototype</a>
-<a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20Apple%20Watch.key" download>Apple Watch prototype</a>
+        <!-- Dropdown 1: Material in English -->
+        <div class="dropdown">
+            <a href="#" class="button">Material in English</a>
+            <div class="dropdown-content">
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/An%20App%20About%20Apps%20-%20What%20is%20the%20app%20about%3F.pages" download>What is the app about?</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/One%20Pager%20presentation.pages" download>One Pager</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Idea%20Compass.key.zip" download>Idea Compass 3</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/My%20favorite%20App.pages" download>My favorite app</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20iPad.key" download>iPad prototype</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20MacBook.key.zip" download>MacBook prototype</a>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20Apple%20Watch.key" download>Apple Watch prototype</a>
+            </div>
         </div>
+
+        <!-- Button 2: Swift -->
+        <a href="https://developer.apple.com/swift/" class="button">Swift</a>
     </div>
 
-    <!-- Dropdown 2: Material in Danish -->
-    <div class="dropdown">
-        <a href="#" class="button">Materiale på dansk</a>
-        <div class="dropdown-content">
-            <a href="https://yourwebsite.com/danish-material/file1.pdf" download>Fil 1</a>
-            <a href="https://yourwebsite.com/danish-material/file2.pdf" download>Fil 2</a>
-            <a href="https://yourwebsite.com/danish-material/file3.pdf" download>Fil 3</a>
-            <a href="https://yourwebsite.com/danish-material/file4.pdf" download>Fil 4</a>
-            <a href="https://yourwebsite.com/danish-material/file5.pdf" download>Fil 5</a>
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="section-title">Dansk Version</div>
+        <!-- Dropdown 2: Material in Danish -->
+        <div class="dropdown">
+            <a href="#" class="button">Materiale på dansk</a>
+            <div class="dropdown-content">
+                <a href="https://yourwebsite.com/danish-material/file1.pdf" download>Fil 1</a>
+                <a href="https://yourwebsite.com/danish-material/file2.pdf" download>Fil 2</a>
+                <a href="https://yourwebsite.com/danish-material/file3.pdf" download>Fil 3</a>
+                <a href="https://yourwebsite.com/danish-material/file4.pdf" download>Fil 4</a>
+                <a href="https://yourwebsite.com/danish-material/file5.pdf" download>Fil 5</a>
+            </div>
         </div>
     </div>
 
