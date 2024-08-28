@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An App About Apps</title>
     <style>
+        @use 'sass:color';
+
+        :root {
+            --page-background: 277deg, 55%, 12%;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
@@ -14,6 +20,12 @@
                         rgba(86, 193, 255, 1)); /* Background gradient */
             color: rgb(255, 150, 141); /* Updated text color */
             position: relative;
+            background: hsla(var(--page-background), 1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             margin-bottom: 50px;
@@ -31,36 +43,75 @@
         }
 
         button {
-            --b: 3px;   /* border thickness */
-            --s: .15em; /* size of the corner */
-            --c: #BD5532;
-            padding: calc(.05em + var(--s)) calc(.3em + var(--s));
-            color: var(--c);
-            --_p: var(--s);
-            background:
-                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
-                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-            transition: .3s linear, color 0s, background-color 0s;
-            outline: var(--b) solid #0000;
-            outline-offset: .2em;
-            font-family: system-ui, sans-serif;
-            font-weight: bold;
-            font-size: 1.5rem;
+            --hue: 277deg; /* Base hue */
+            --hue-adjust: 135deg; /* Hue adjustment */
+            --hue-contrast: color.hue(color.adjust(hsl(var(--hue), 100%, 50%), $hue: var(--hue-adjust)));
+
+            --text-base: 277deg, 55%, 40%;
+            --text-hover: 307deg, 72%, 86%;
+
+            --shadow-start: var(--hue-contrast), 100%, 72%;
+            --shadow-end: 282deg, 90%, 50%;
+
+            --shadow-inner: 277deg, 90%, 62%;
+
+            all: unset;
+            color: hsla(var(--text-base), 1);
+            font: 700 1rem/1.2 Raleway, sans-serif; /* Adjusted font size */
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0.85em;
+            max-width: 100%;
+            width: 14em; /* Adjusted width */
+            background: inherit;
+            background-clip: padding-box;
+            border: 5px solid hsla(var(--text-base), 1);
+            border-radius: 2em;
             cursor: pointer;
-            border: none;
-            margin: .1em;
-            width: 280px; /* Fixed width */
-            height: 60px; /* Fixed height */
-        }
-        button:hover,
-        button:focus-visible {
-            --_p: 0px;
-            outline-color: var(--c);
-            outline-offset: .05em;
-        }
-        button:active {
-            background: var(--c);
-            color: #fff;
+            position: relative;
+            transition: 0.25s ease-out;
+
+            &::before,
+            &::after {
+                content: "";
+                border-radius: inherit;
+                transition: inherit;
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+            }
+
+            &::before {
+                inset: -0.2em;
+                z-index: -1;
+                background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+                filter: blur(1.2em) saturate(1.2);
+                transform-origin: bottom;
+                transform: scaleY(0.5);
+                opacity: 0;
+            }
+
+            &::after {
+                box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px hsla(0deg, 0%, 100%, 0.7), 1px 1px 0 4px #fff;
+                mix-blend-mode: overlay;
+                opacity: 0;
+            }
+
+            &:hover,
+            &:focus {
+                color: hsla(var(--text-hover), 1);
+                border-color: transparent;
+                box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1),
+                            inset 0 0 1.4em hsla(var(--shadow-inner), 0.32),
+                            0 1px 1px hsla(var(--shadow-inner), 0.32);
+
+                &::before,
+                &::after {
+                    transform: none;
+                    opacity: 1;
+                }
+            }
         }
 
         .dropdown {
@@ -145,13 +196,4 @@
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/blob/main/One%20Pager%20præsentation.pages" download>One Pager</a>
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Idea%20Compass.key.zip" download>Idekompasset</a>
                 <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/My%20favorite%20App.pages" download>Min favorit app</a>
-                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype</a>
-                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20prototype%20app%20iPad.key" download>iPad prototype</a>
-                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20prototype%20app%20MacBook.key.zip" download>MacBook prototype</a>
-                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20prototype%20Apple%20Watch.key" download>Apple Watch prototype</a>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+                <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype
