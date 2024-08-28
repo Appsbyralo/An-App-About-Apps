@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An App About Apps</title>
     <style>
-        @use 'sass:color';
-
         :root {
-            --page-background: 277deg, 55%, 12%;
+            --page-background: linear-gradient(to right, 
+                rgba(217, 201, 254, 1), 
+                rgba(86, 193, 255, 1)); /* Background gradient */
+            --button-bg: 0deg, 0%, 100%; /* White background for buttons */
         }
 
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
             text-align: center;
-            background: linear-gradient(to right, 
-                        rgba(217, 201, 254, 1), 
-                        rgba(86, 193, 255, 1)); /* Background gradient */
             color: rgb(255, 150, 141); /* Updated text color */
             position: relative;
-            background: hsla(var(--page-background), 1);
+            background: var(--page-background);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -43,17 +41,17 @@
         }
 
         button {
-            --hue: 277deg; /* Base hue */
+            --hue: 0deg; /* Reset hue to neutral for white */
             --hue-adjust: 135deg; /* Hue adjustment */
             --hue-contrast: color.hue(color.adjust(hsl(var(--hue), 100%, 50%), $hue: var(--hue-adjust)));
 
-            --text-base: 277deg, 55%, 40%;
-            --text-hover: 307deg, 72%, 86%;
+            --text-base: 0deg, 0%, 20%; /* Dark gray text */
+            --text-hover: 0deg, 0%, 0%; /* Black text on hover */
 
             --shadow-start: var(--hue-contrast), 100%, 72%;
             --shadow-end: 282deg, 90%, 50%;
 
-            --shadow-inner: 277deg, 90%, 62%;
+            --shadow-inner: 0deg, 0%, 50%;
 
             all: unset;
             color: hsla(var(--text-base), 1);
@@ -64,7 +62,11 @@
             padding: 0.85em;
             max-width: 100%;
             width: 14em; /* Adjusted width */
-            background: inherit;
+            height: 3em; /* Fixed height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: hsla(var(--button-bg), 1);
             background-clip: padding-box;
             border: 5px solid hsla(var(--text-base), 1);
             border-radius: 2em;
