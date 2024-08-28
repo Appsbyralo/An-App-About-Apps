@@ -40,6 +40,14 @@
             text-decoration: underline;
         }
 
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin: 20px 0;
+        }
+
         button {
             --hue: 0deg; /* Reset hue to neutral for white */
             --hue-adjust: 135deg; /* Hue adjustment */
@@ -60,8 +68,7 @@
             text-transform: uppercase;
             text-align: center;
             padding: 0.85em;
-            max-width: 100%;
-            width: 14em; /* Adjusted width */
+            width: 14em; /* Fixed width */
             height: 3em; /* Fixed height */
             display: flex;
             justify-content: center;
