@@ -9,25 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 40px;
             text-align: center;
-            background-image: url('https://github.com/Appsbyralo/An-App-About-Apps/blob/main/4.jpeg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            background-color: #000; /* Changed to solid background color */
             color: white;
-        }
-        /* Overlay to adjust opacity */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for opacity */
-            z-index: -1;
+            position: relative;
         }
         h1 {
             margin-bottom: 50px;
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
         }
         .section-title {
             font-size: 24px;
@@ -87,11 +80,14 @@
 <body>
     <h1>An App About Apps</h1>
 
+
+    <img src="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/4.jpeg" alt="App Image">
+
     <div class="section">
         <div class="section-title">English Version</div>
-        <!-- Button 1: Swift Playground Subscription -->
+    
         <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json" class="button">
-            Subscribe to Swift Playground
+            Subscribe to the App in Swift Playground
         </a>
 
         <!-- Dropdown 1: Material in English -->
@@ -115,6 +111,9 @@
     <div class="section">
         <div class="section-title">Dansk Version</div>
         
+        <!-- Button 2: Swift -->
+        <a href="https://developer.apple.com/swift/" class="button">Aboner på appen i Swift Playground</a>
+
         <!-- Dropdown 2: Material in Danish -->
         <div class="dropdown">
             <a href="#" class="button">Materiale på dansk</a>
@@ -126,9 +125,6 @@
                 <a href="https://yourwebsite.com/danish-material/file5.pdf" download>Fil 5</a>
             </div>
         </div>
-
-        <!-- Button 2: Swift -->
-        <a href="https://developer.apple.com/swift/" class="button">Swift</a>
     </div>
 
 </body>
