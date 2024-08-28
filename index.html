@@ -42,7 +42,7 @@
 
         .content-container {
             display: flex;
-            flex-wrap: nowrap; /* Prevent wrapping */
+            flex-wrap: wrap;
             justify-content: center;
             gap: 50px; /* Space between English and Dansk sections */
             margin: 20px 0;
@@ -93,6 +93,47 @@
             cursor: pointer;
             position: relative;
             transition: 0.25s ease-out;
+
+            &::before,
+            &::after {
+                content: "";
+                border-radius: inherit;
+                transition: inherit;
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+            }
+
+            &::before {
+                inset: -0.2em;
+                z-index: -1;
+                background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+                filter: blur(1.2em) saturate(1.2);
+                transform-origin: bottom;
+                transform: scaleY(0.5);
+                opacity: 0;
+            }
+
+            &::after {
+                box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px hsla(0deg, 0%, 100%, 0.7), 1px 1px 0 4px #fff;
+                mix-blend-mode: overlay;
+                opacity: 0;
+            }
+
+            &:hover,
+            &:focus {
+                color: hsla(var(--text-hover), 1);
+                border-color: transparent;
+                box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1),
+                            inset 0 0 1.4em hsla(var(--shadow-inner), 0.32),
+                            0 1px 1px hsla(var(--shadow-inner), 0.32);
+
+                &::before,
+                &::after {
+                    transform: none;
+                    opacity: 1;
+                }
+            }
         }
 
         .dropdown {
@@ -100,7 +141,6 @@
             display: inline-block;
             margin: 20px;
         }
-
         .dropdown-content {
             display: none;
             position: absolute;
@@ -109,34 +149,29 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-
         .dropdown-content a {
             color: black; /* Updated text color */
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-
         .dropdown-content a:hover {
             background-color: #f1f1f1; /* Light grey on hover */
         }
-
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
         .dropdown:hover button {
             background-color: #f1f1f1; /* Light grey on hover */
         }
-
         .section {
             margin-bottom: 40px;
         }
-
         .divider {
             border-top: 2px solid #ccc;
             margin: 60px 0;
         }
+    
     </style>
 </head>
 <body>
