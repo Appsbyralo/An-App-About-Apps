@@ -1,7 +1,7 @@
 {
 "title": "An App About Apps",
 "subtitle": "A Collection of Swift Lessons",
-"publisherName": "ATEA and Vallensbæk Kommune",
+"publisherName": "Vallensbæk Kommune and ATEA Denmark",
 "feedIdentifier": "com.github.appsbyralo",
 "contactURL": "mailto:appsbyralo@gmail.com",
 "formatVersion": "1.0",
@@ -16,8 +16,8 @@
 "url": "https://appsbyralo.github.io/An-App-About-Apps/AAAAEN.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Thumbnail.png",
+"bannerImageURL": "https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
@@ -25,7 +25,7 @@
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/preview.png"
+"https://github.com/Appsbyralo/An-App-About-Apps/blob/main/preview.png"
 ]
 },
 {
@@ -38,8 +38,8 @@
 "url": "https://appsbyralo.github.io/Navigation/Navigation.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/Navigation-bar/blob/main/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/Navigation-bar/blob/main/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
@@ -47,7 +47,7 @@
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/Navigation-bar/blob/main/preview.png"
 ]
 },
 {
@@ -60,9 +60,8 @@
 "url": "https://appsbyralo.github.io/Stacks/StacksEN.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/Banner.png",
-,
+"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
@@ -70,7 +69,7 @@
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/An-App-About-Apps/blob/main/preview.png"
 ]
 },
 {
@@ -83,8 +82,8 @@
 "url": "https://appsbyralo.github.io/Content/ContentEN.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
@@ -92,7 +91,7 @@
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/Appsbyralo/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/An-App-About-Apps/blob/main/preview.png"
 ]
 }
 ]
