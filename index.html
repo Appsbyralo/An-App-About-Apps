@@ -59,8 +59,9 @@
 
         .button-container {
             display: flex;
-            flex-direction: column;
-            gap: 20px; /* Space between buttons */
+            justify-content: center;
+            gap: 20px; /* Space between buttons horizontally */
+            flex-wrap: wrap; /* Allow wrapping on small screens */
         }
 
         button {
@@ -141,7 +142,6 @@
         .dropdown {
             position: relative;
             display: inline-block;
-            margin: 20px;
         }
         .dropdown-content {
             display: none;
