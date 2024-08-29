@@ -99,7 +99,7 @@
 "overviewSubtitle": "A one stop shop to get started building your own apps",
 "detailSubtitle": "A few ideas to get you started quickly",
 "description": "With this app, you'll learn some of the cool things you can do when creating apps, such as making different types of buttons, slider buttons, GPS maps, and much more.",
-"contentIdentifier": "com.github.appsbyralo.Content",
+"contentIdentifier": "com.github.appsbyralo.Things",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io/Things/ThingsEN.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
