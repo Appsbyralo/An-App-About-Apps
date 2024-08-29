@@ -38,14 +38,16 @@
             font-size: 24px;
             margin: 40px 0 20px;
             text-decoration: underline;
+            color: #ff6666; /* Use a similar color for headlines */
         }
 
         .content-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
-            gap: 50px; /* Space between English and Dansk sections */
-            margin: 20px 0;
+            gap: 100px; /* Space between English and Dansk sections */
+            margin: 40px 0;
+            width: 100%; /* Adjust the container to full width */
         }
 
         .language-section {
@@ -76,12 +78,12 @@
 
             all: unset;
             color: hsla(var(--text-base), 1);
-            font: 700 0.9rem/1.2 Raleway, sans-serif; /* Adjusted font size */
+            font: 700 0.75rem/1.2 Raleway, sans-serif; /* Adjusted font size */
             letter-spacing: 0.08em;
             text-transform: uppercase;
             text-align: center;
-            padding: 0.85em;
-            width: 16em; /* Adjusted width */
+            padding: 0.65em; /* Adjusted padding */
+            width: 14em; /* Adjusted width */
             height: auto; /* Adjusted height */
             display: flex;
             justify-content: center;
@@ -166,10 +168,12 @@
         }
         .section {
             margin-bottom: 40px;
+            width: 50%; /* Adjust section width */
         }
         .divider {
             border-top: 2px solid #ccc;
             margin: 60px 0;
+            width: 100%;
         }
     </style>
 </head>
