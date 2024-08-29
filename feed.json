@@ -10,7 +10,7 @@
 "title": "An App About Apps",
 "overviewSubtitle": "A one stop shop to get started building your own apps",
 "detailSubtitle": "Get started building your own apps",
-"description": "An App About Apps is about moving from developing ideas for needed apps to sketching and describing those ideas and creating app prototypes. If you wish, you can also work on learning to code in Swift, so you can eventually publish a real app on the App Store. Turn your visions and ideas into reality!",
+"description": "Download the app for the educational project, where you can access all materials, descriptions, activities, portfolios, and documents.",
 "contentIdentifier": "com.github.appsbyralo.An-App-About-Apps",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io/An-App-About-Apps/AAAAEN.swiftpm.zip",
@@ -30,9 +30,9 @@
 },
 {
 "title": "1. Navigation bar",
-"overviewSubtitle": "Learn how to make a navigation bar",
-"detailSubtitle": "the first lesson where you learn the fundamentals",
-"description": "Build a navigation bar",
+"overviewSubtitle": "A one stop shop to get started building your own apps",
+"detailSubtitle": "Learn how to make a navigation bar",
+"description": "In this Swift app, you will learn through tasks, code, and explanations how to create your own Navigation Bar (Menu) in your app. You will learn to build different numbers of buttons, pages, and media content in your app.",
 "contentIdentifier": "com.github.appsbyralo.Navigation",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io/Navigation/Navigation.swiftpm.zip",
@@ -53,8 +53,8 @@
 {
 "title": "2. Stacks",
 "overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Get started building your own apps",
-"description": "An App About Apps is about moving from developing ideas for needed apps to sketching and describing those ideas and creating app prototypes. If you wish, you can also work on learning to code in Swift, so you can eventually publish a real app on the App Store. Turn your visions and ideas into reality!",
+"detailSubtitle": "Learn about Stacks",
+"description": "In the Stacks app, you will learn how to place different types of objects in VStacks, HStacks, and ZStacks. With this app, you'll learn how to control the layout of your app, making it easier to design the desired layout.",
 "contentIdentifier": "com.github.appsbyralo.Stacks",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io/Stacks/StacksEN.swiftpm.zip",
@@ -75,8 +75,30 @@
 {
 "title": "3. Content",
 "overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Get started building your own apps",
-"description": "An App About Apps is about moving from developing ideas for needed apps to sketching and describing those ideas and creating app prototypes. If you wish, you can also work on learning to code in Swift, so you can eventually publish a real app on the App Store. Turn your visions and ideas into reality!",
+"detailSubtitle": "Learn how to add content to your app",
+"description": "With this resource, you will gain the skills to insert your own photos, videos, and links into your app to make it more visual and appealing.",
+"contentIdentifier": "com.github.appsbyralo.Content",
+"contentVersion": "1.0",
+"url": "https://appsbyralo.github.io/Content/ContentEN.swiftpm.zip",
+"publishedDate": "2024-08-18T12:00:00+00:00",
+"lastUpdatedDate": "2024-08-18T12:00:00+00:00",
+"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/blob/main/Banner.png",
+"additionalInformation": [
+{
+"name": "Languages",
+"value": "English"
+}
+],
+"previewImageURLs": [
+"https://appsbyralo.github.io/An-App-About-Apps/blob/main/preview.png"
+]
+},
+{
+"title": "4. Things to get you started",
+"overviewSubtitle": "A one stop shop to get started building your own apps",
+"detailSubtitle": "A few ideas to get you started quickly",
+"description": "With this app, you'll learn some of the cool things you can do when creating apps, such as making different types of buttons, slider buttons, GPS maps, and much more.",
 "contentIdentifier": "com.github.appsbyralo.Content",
 "contentVersion": "1.0",
 "url": "https://appsbyralo.github.io/Content/ContentEN.swiftpm.zip",
