@@ -1,118 +1,119 @@
 {
-"title": "An App About Apps",
+"title": "An App About Apps - Dansk",
 "subtitle": "A Collection of Swift Lessons",
 "publisherName": "Vallensbæk Kommune and ATEA Denmark",
 "feedIdentifier": "com.github.appsbyralo",
-"contactURL": "mailto:appsbyralo@gmail.com",
+"contactURL": "mailto:ralotoft@gmail.com",
 "formatVersion": "1.0",
 "documents": [
 {
 "title": "An App About Apps",
-"overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Get started building your own apps",
-"description": "Download the app for the educational project, where you can access all materials, descriptions, activities, portfolios, and documents.",
-"contentIdentifier": "com.github.appsbyralo.An-App-About-Apps",
+"overviewSubtitle": "Alt hvad du skal bruge for at komme i gang med at lave apps",
+"detailSubtitle": "",
+"description": "Download selve appen til undervisningsprojektet, hvor du kan få adgang til alt materiale, beskrivelser, aktiviteter, portfolio og dokumenter",
+"contentIdentifier": "com.github.appsbyralo.AAAADA",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/An-App-About-Apps/AAAAEN.swiftpm.zip",
+"url": "https://appsbyralo.github.io/AAAADA/AAAADA.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/AAAAADA/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/AAAADA/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
-"value": "English"
+"value": "Danish"
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/AAAADA/Preview.png"
 ]
 },
 {
 "title": "1. Navigation bar",
-"overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Learn how to make a navigation bar",
-"description": "In this Swift app, you will learn through tasks, code, and explanations how to create your own Navigation Bar (Menu) in your app. You will learn to build different numbers of buttons, pages, and media content in your app.",
-"contentIdentifier": "com.github.appsbyralo.Navigation",
+"overviewSubtitle": "Alt hvad du skal bruge for at komme i gang med at lave apps",
+"detailSubtitle": "Lær at lave en navigation bar",
+"description": "I denne Swift app lærer du gennem opgaver, koder og forklaringer hvordan du kan lave din egen Navigation Bar (Menu) i din egen app. Du vil lære at opbygge forskellige antal knapper, sider og medieindhold i din app.",
+"contentIdentifier": "com.github.appsbyralo.NavigationDA",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/Navigation/Navigation.swiftpm.zip",
+"url": "https://appsbyralo.github.io/Navigation/NavigationDA.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/AAAAADA/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/AAAADA/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
-"value": "English"
+"value": "Danish"
 }
 ],
-"https://appsbyralo.github.io/An-App-About-Apps/preview.png"
+"previewImageURLs": [
+"https://appsbyralo.github.io/AAAADA/Preview.png"
 ]
 },
 {
 "title": "2. Stacks",
-"overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Learn about Stacks",
-"description": "In the Stacks app, you will learn how to place different types of objects in VStacks, HStacks, and ZStacks. With this app, you'll learn how to control the layout of your app, making it easier to design the desired layout.",
-"contentIdentifier": "com.github.appsbyralo.Stacks",
+"overviewSubtitle": "Alt hvad du skal bruge for at komme i gang med at lave apps",
+"detailSubtitle": "Her arbejder vi med Stacks",
+"description": "I Stacks appen lærer du at placere forskellige typer af objekter på Vstacks, Hstacks og Zstacks. Med denne app lærer du at styre layoutet i din app, så du lettere kan designe det ønskede layout.",
+"contentIdentifier": "com.github.appsbyralo.StackskDA",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/Stacks/StacksEN.swiftpm.zip",
+"url": "https://appsbyralo.github.io/Stacks/StacksDA.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/AAAAADA/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/AAAADA/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
-"value": "English"
+"value": "Danish"
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/AAAADA/Preview.png"
 ]
 },
 {
 "title": "3. Content",
 "overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "Learn how to add content to your app",
-"description": "With this resource, you will gain the skills to insert your own photos, videos, and links into your app to make it more visual and appealing.",
-"contentIdentifier": "com.github.appsbyralo.Content",
+"detailSubtitle": "Lær at tilføje indhold i din app",
+"description": "Med denne ressource får du kompetencerne til at kunne indsætte egne fotos, videoer og links i din egen app for at gøre appen mere visuel og indbydende.",
+"contentIdentifier": "com.github.appsbyralo.ContentDA",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/Content/ContentEN.swiftpm.zip",
+"url": "https://appsbyralo.github.io/Content/ContentDA.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/AAAAADA/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/AAAADA/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
-"value": "English"
+"value": "Danish"
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/AAAADA/Preview.png"
 ]
 },
 {
 "title": "4. Things to get you started",
 "overviewSubtitle": "A one stop shop to get started building your own apps",
-"detailSubtitle": "A few ideas to get you started quickly",
-"description": "With this app, you'll learn some of the cool things you can do when creating apps, such as making different types of buttons, slider buttons, GPS maps, and much more.",
-"contentIdentifier": "com.github.appsbyralo.Things",
+"detailSubtitle": "Nogle forskellige ting til at komme hurtigt igang",
+"description": "Med denne app lærer du nogle af alle de ting der er fede at kunne når man skaber apps, f.eks. At lave forskellige typer af knapper, slideknapper, GPS-kort og meget mere.",
+"contentIdentifier": "com.github.appsbyralo.ThingsDA",
 "contentVersion": "1.0",
-"url": "https://appsbyralo.github.io/Things/ThingsEN.swiftpm.zip",
+"url": "https://appsbyralo.github.io/Things/ThingsDA.swiftpm.zip",
 "publishedDate": "2024-08-18T12:00:00+00:00",
 "lastUpdatedDate": "2024-08-18T12:00:00+00:00",
-"thumbnailURL": "https://appsbyralo.github.io/An-App-About-Apps/Thumbnail.png",
-"bannerImageURL": "https://appsbyralo.github.io/An-App-About-Apps/Banner.png",
+"thumbnailURL": "https://appsbyralo.github.io/AAAAADA/Thumbnail.png",
+"bannerImageURL": "https://appsbyralo.github.io/AAAADA/Banner.png",
 "additionalInformation": [
 {
 "name": "Languages",
-"value": "English"
+"value": "Danish"
 }
 ],
 "previewImageURLs": [
-"https://appsbyralo.github.io/An-App-About-Apps/preview.png"
+"https://appsbyralo.github.io/AAAADA/Preview.png"
 ]
 }
 ]
