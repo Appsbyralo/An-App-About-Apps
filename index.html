@@ -15,7 +15,7 @@
             font-family: Arial, sans-serif;
             margin: 40px;
             text-align: center;
-            color: #ff6666;
+            color: rgb(255, 150, 141);
             background: var(--page-background);
             height: 100%;
             display: flex;
@@ -45,20 +45,19 @@
 
         .section {
             width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .section-title {
             font-size: 24px;
             margin: 40px 0 20px;
-            text-decoration: none;
             color: #ff6666;
         }
 
         .section-buttons {
             margin-top: 20px;
-        }
-
-        .button-group {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -75,20 +74,25 @@
             border-radius: 10px;
             cursor: pointer;
             text-align: center;
+            white-space: nowrap;
+            width: 280px;
         }
 
+        /* Dropdown styling */
         .dropdown {
             position: relative;
             display: inline-block;
+            width: 100%;
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: white;
+            min-width: 280px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
+            text-align: left;
         }
 
         .dropdown-content a {
@@ -96,24 +100,50 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            width: 100%;
         }
 
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #ddd;
         }
 
-        .dropdown:hover .dropdown-content {
+        .dropdown.show .dropdown-content {
             display: block;
-        }
-
-        .dropdown:hover button {
-            background-color: #f1f1f1;
         }
 
         .divider {
             border-top: 2px solid #ccc;
-            margin: 60px 0;
+            margin: 30px 0;
             width: 100%;
+        }
+
+        .other-languages-title {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            color: #ff6666;
+            text-align: center;
+        }
+
+        .aligned-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 40px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .other-languages-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
@@ -122,61 +152,79 @@
 
     <img src="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/4.jpeg" alt="App Image">
 
-    <div class="sections-container">
+    <div class="aligned-container">
+        <!-- First section: English and Danish buttons -->
         <div class="section">
             <div class="section-title">English Version</div>
             <div class="section-buttons">
-                <div class="button-group">
-                    <div class="dropdown">
-                        <button>Material in English</button>
-                        <div class="dropdown-content">
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/An%20App%20About%20Apps%20-%20What%20is%20the%20app%20about%3F.pages" download>What is the app about?</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/One%20Pager%20presentation.pages" download>One Pager</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Idea%20Compass.key.zip" download>Idea Compass</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/My%20favorite%20App.pages" download>My favorite app</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20iPad.key" download>iPad prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20MacBook.key.zip" download>MacBook prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20Apple%20Watch.key" download>Apple Watch prototype</a>
-                            <a href="https://app.box.com/s/b6a1m1jguxyx5fp6a476tbo0tfcn6gjf" download>From idea to prototype</a>
-                            <a href="https://app.box.com/s/76jghz4hifyu5e4uh8egap5jk21ocwj5" download>Coding with Swift</a>
-                          
-                        </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this)">Material in English</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
-                        <button>Subscribe to the App in Swift Playground</button>
-                    </a>
                 </div>
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
+                    <button>App subscription in Swift Playground</button>
+                </a>
+            </div>
+
+            <div class="section-title">Dansk Version</div>
+            <div class="section-buttons">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown(this)">Materiale på dansk</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">
+                    <button>Abonner på appen i Swift Playground</button>
+                </a>
             </div>
         </div>
 
+        <!-- Second section: Other Languages, aligned with first section -->
         <div class="section">
-            <div class="section-title">Dansk Version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <div class="dropdown">
-                        <button>Materiale på dansk</button>
-                        <div class="dropdown-content">
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om%3F%20.pages" download>Hvad handler appen om?</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/One%20Pager%20præsentation.pages" download>One Pager</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Idekompas.key" download>Idekompasset</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Min%20favorit%20app.pages.zip" download>Min favorit app</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPhone%20prototype.key.zip" download>iPhone prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPad%20prototype.key.zip" download>iPad prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20MacBook%20prototype.key" download>MacBook prototype</a>
-                            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20Apple%20Watch%20prototype.key.zip" download>Apple Watch prototype</a>
-                            <a href="https://app.box.com/s/eer0ts774nd796cjib55ik3ero9f130v" download>Fra ide til prototype</a>
-                            <a href="https://app.box.com/s/sk8e3nu0umpfef5m58kaajzol6sie0ax" download>Kod med Swift</a>
-                        </div>
-                    </div>
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">
-                        <button>Abonner på appen i Swift Playground</button>
-                    </a>
-                </div>
+            <div class="other-languages-title">Other Languages</div>
+            <div class="other-languages-buttons">
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsDE/feed.json">
+                    <button>Abonnieren Sie die App auf Deutsch</button>
+                </a>
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsFR/feed.json">
+                    <button>Abonnez-vous à l'app en français</button>
+                </a>
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsES/feed.json">
+                    <button>Suscríbete a la aplicación en español</button>
+                </a>
+                <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIN/feed.json">
+                    <button>ऐप को हिंदी में सब्सक्राइब करें</button>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="divider"></div>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.nextElementSibling;
+            dropdown.classList.toggle('show');
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('button')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        }
+    </script>
 </body>
 </html>
