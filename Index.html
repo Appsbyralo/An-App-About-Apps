@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An App About Apps</title>
+    <style>
+        :root {
+            --page-background: linear-gradient(to right, rgba(217, 201, 254, 1), rgba(86, 193, 255, 1));
+            --button-bg: white;
+            --button-text-color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+            color: rgb(255, 150, 141);
+            background: var(--page-background);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .sections-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: 100%;
+            margin: 20px 0; /* Reduced the spacing between sections */
+        }
+
+        .section {
+            width: 45%;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            text-decoration: underline;
+            color: #ff6666;
+        }
+
+        .section-buttons {
+            margin-top: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            background: var(--button-bg);
+            color: var(--button-text-color);
+            font-weight: bold;
+            font-size: 0.85rem;
+            padding: 10px 20px;
+            border: 2px solid var(--button-text-color);
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover button {
+            background-color: #f1f1f1;
+        }
+
+        .divider {
+            border-top: 2px solid #ccc;
+            margin: 60px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>An App About Apps</h1>
+
+    <img src="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/4.jpeg" alt="App Image">
+
+    <!-- Section One -->
+    <div class="sections-container">
+        <div class="section">
+            <div class="section-title">English Version</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <div class="dropdown">
+                        <button>Material in English</button>
+                        <div class="dropdown-content">
+                            <!-- Links for English version here -->
+                        </div>
+                    </div>
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
+                        <button>Subscribe to the App in Swift Playground</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Dansk Version</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <div class="dropdown">
+                        <button>Materiale på dansk</button>
+                        <div class="dropdown-content">
+                            <!-- Links for Danish version here -->
+                        </div>
+                    </div>
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">
+                        <button>Abonner på appen i Swift Playground</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Two -->
+    <div class="sections-container">
+        <div class="section">
+            <div class="section-title">Deutsche Version</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsDE/feed.json">
+                        <button>Abonnieren Sie die App auf Deutsch</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Version française</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsFR/feed.json">
+                        <button>Abonnez-vous à l'app en français</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Three -->
+    <div class="sections-container">
+        <div class="section">
+            <div class="section-title">Versión en español</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsES/feed.json">
+                        <button>Suscríbete a la aplicación en español</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">हिंदी संस्करण</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIN/feed.json">
+                        <button>ऐप को हिंदी में सब्सक्राइब करें</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Four (New) -->
+    <div class="sections-container">
+        <div class="section">
+            <div class="section-title">Svensk version</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsSE/feed.json">
+                        <button>Prenumerera på appen i Swift Playground</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Versione italiana</div>
+            <div class="section-buttons">
+                <div class="button-group">
+                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIT/feed.json">
+                        <button>Iscriviti all'app in Swift Playground</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</body>
+</html>
