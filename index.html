@@ -40,7 +40,7 @@
             justify-content: center;
             gap: 40px;
             width: 100%;
-            margin: 20px 0; /* Reduced the spacing between sections */
+            margin: 20px 0;
         }
 
         .section {
@@ -103,12 +103,8 @@
             background-color: #f1f1f1;
         }
 
-        .dropdown:hover .dropdown-content {
+        .dropdown-content.show {
             display: block;
-        }
-
-        .dropdown:hover button {
-            background-color: #f1f1f1;
         }
 
         .divider {
@@ -130,9 +126,18 @@
             <div class="section-buttons">
                 <div class="button-group">
                     <div class="dropdown">
-                        <button>Material in English</button>
-                        <div class="dropdown-content">
-                            <!-- Links for English version here -->
+                        <button onclick="toggleDropdown('dropdown-en')">Material in English</button>
+                        <div id="dropdown-en" class="dropdown-content">
+                            <a href="#">What is the app about?</a>
+                            <a href="#">One Pager</a>
+                            <a href="#">Idea Compass</a>
+                            <a href="#">My favorite app</a>
+                            <a href="#">iPhone prototype</a>
+                            <a href="#">iPad prototype</a>
+                            <a href="#">MacBook prototype</a>
+                            <a href="#">Apple Watch prototype</a>
+                            <a href="#">From idea to prototype</a>
+                            <a href="#">Coding with Swift</a>
                         </div>
                     </div>
                     <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
@@ -147,9 +152,18 @@
             <div class="section-buttons">
                 <div class="button-group">
                     <div class="dropdown">
-                        <button>Materiale på dansk</button>
-                        <div class="dropdown-content">
-                            <!-- Links for Danish version here -->
+                        <button onclick="toggleDropdown('dropdown-da')">Materiale på dansk</button>
+                        <div id="dropdown-da" class="dropdown-content">
+                            <a href="#">Hvad handler appen om?</a>
+                            <a href="#">One Pager</a>
+                            <a href="#">Idekompasset</a>
+                            <a href="#">Min favorit app</a>
+                            <a href="#">iPhone prototype</a>
+                            <a href="#">iPad prototype</a>
+                            <a href="#">MacBook prototype</a>
+                            <a href="#">Apple Watch prototype</a>
+                            <a href="#">Fra ide til prototype</a>
+                            <a href="#">Kod med Swift</a>
                         </div>
                     </div>
                     <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">
@@ -160,60 +174,10 @@
         </div>
     </div>
 
-    <!-- Section Two -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">Deutsche Version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsDE/feed.json">
-                        <button>Abonnieren Sie die App auf Deutsch</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Version française</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsFR/feed.json">
-                        <button>Abonnez-vous à l'app en français</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Section Three -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">Versión en español</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsES/feed.json">
-                        <button>Suscríbete a la aplicación en español</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">हिंदी संस्करण</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIN/feed.json">
-                        <button>ऐप को हिंदी में सब्सक्राइब करें</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Section Four (New) -->
     <div class="sections-container">
         <div class="section">
-            <div class="section-title">Svensk Version</div>
+            <div class="section-title">Svensk version</div>
             <div class="section-buttons">
                 <div class="button-group">
                     <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsSE/feed.json">
@@ -236,5 +200,26 @@
     </div>
 
     <div class="divider"></div>
+
+    <script>
+        // Function to toggle dropdown visibility
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
