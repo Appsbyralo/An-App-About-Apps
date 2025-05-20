@@ -18,10 +18,6 @@
             color: rgb(255, 150, 141);
             background: var(--page-background);
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         h1 {
@@ -35,80 +31,28 @@
             border-radius: 10px;
         }
 
-        .sections-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            width: 100%;
-            margin: 20px 0; /* Reduced the spacing between sections */
-        }
-
         .section {
-            width: 45%;
+            margin: 40px 0;
         }
 
         .section-title {
-            font-size: 24px;
-            margin: 40px 0 20px;
+            font-size: 28px;
+            margin-bottom: 20px;
             text-decoration: underline;
             color: #ff6666;
         }
 
-        .section-buttons {
-            margin-top: 20px;
-        }
-
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        button {
-            background: var(--button-bg);
-            color: var(--button-text-color);
-            font-weight: bold;
-            font-size: 0.85rem;
-            padding: 10px 20px;
-            border: 2px solid var(--button-text-color);
-            border-radius: 10px;
-            cursor: pointer;
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
+        .material-list a {
+            display: block;
+            margin: 6px 0;
+            font-size: 1rem;
             color: black;
-            padding: 12px 16px;
             text-decoration: none;
-            display: block;
+            font-weight: bold;
         }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover button {
-            background-color: #f1f1f1;
+        .material-list a:hover {
+            text-decoration: underline;
         }
 
         .divider {
@@ -120,118 +64,64 @@
 </head>
 <body>
     <h1>An App About Apps</h1>
-
     <img src="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/4.jpeg" alt="App Image">
 
-    <!-- Section One -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">English Version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <div class="dropdown">
-                        <button>Material in English</button>
-                        <div class="dropdown-content">
-                            <!-- Links for English version here -->
-                        </div>
-                    </div>
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">
-                        <button>Subscribe to the App in Swift Playground</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Dansk Version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <div class="dropdown">
-                        <button>Materiale på dansk</button>
-                        <div class="dropdown-content">
-                            <!-- Links for Danish version here -->
-                        </div>
-                    </div>
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">
-                        <button>Abonner på appen i Swift Playground</button>
-                    </a>
-                </div>
-            </div>
+    <!-- English Material Section -->
+    <div class="section">
+        <div class="section-title">English Version</div>
+        <div class="material-list">
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/An%20App%20About%20Apps%20-%20What%20is%20the%20app%20about%3F.pages" download>What is the app about?</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/One%20Pager%20presentation.pages" download>One Pager</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Idea%20Compass.key.zip" download>Idea Compass</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/My%20favorite%20App.pages" download>My favorite app</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20iPhone.key.zip" download>iPhone prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20iPad.key" download>iPad prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20app%20MacBook.key.zip" download>MacBook prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsEN/main/Keynote%20prototype%20Apple%20Watch.key" download>Apple Watch prototype</a>
+            <a href="https://app.box.com/s/b6a1m1jguxyx5fp6a476tbo0tfcn6gjf" download>From idea to prototype</a>
+            <a href="https://app.box.com/s/76jghz4hifyu5e4uh8egap5jk21ocwj5" download>Coding with Swift</a>
         </div>
     </div>
 
-    <!-- Section Two -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">Deutsche Version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsDE/feed.json">
-                        <button>Abonnieren Sie die App auf Deutsch</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Version française</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsFR/feed.json">
-                        <button>Abonnez-vous à l'app en français</button>
-                    </a>
-                </div>
-            </div>
+    <!-- Danish Material Section -->
+    <div class="section">
+        <div class="section-title">Dansk Version</div>
+        <div class="material-list">
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om%3F%20.pages" download>Hvad handler appen om?</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/One%20Pager%20præsentation.pages" download>One Pager</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Idekompas.key" download>Idekompasset</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Min%20favorit%20app.pages.zip" download>Min favorit app</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPhone%20prototype.key.zip" download>iPhone prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPad%20prototype.key.zip" download>iPad prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20MacBook%20prototype.key" download>MacBook prototype</a>
+            <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20Apple%20Watch%20prototype.key.zip" download>Apple Watch prototype</a>
+            <a href="https://app.box.com/s/eer0ts774nd796cjib55ik3ero9f130v" download>Fra ide til prototype</a>
+            <a href="https://app.box.com/s/sk8e3nu0umpfef5m58kaajzol6sie0ax" download>Kod med Swift</a>
         </div>
     </div>
 
-    <!-- Section Three -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">Versión en español</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsES/feed.json">
-                        <button>Suscríbete a la aplicación en español</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">हिंदी संस्करण</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIN/feed.json">
-                        <button>ऐप को हिंदी में सब्सक्राइब करें</button>
-                    </a>
-                </div>
-            </div>
+    <!-- Teaching Material Section -->
+    <div class="section">
+        <div class="section-title">Teaching Material</div>
+        <div class="material-list">
+            <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/An-App-About-Apps/feed.json">English - Subscribe in Swift Playground</a>
+            <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/AAAADA/feed.json">Danish - Abonner i Swift Playground</a>
         </div>
     </div>
 
-    <!-- Section Four (New) -->
-    <div class="sections-container">
-        <div class="section">
-            <div class="section-title">Svensk version</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsSE/feed.json">
-                        <button>Prenumerera på appen i Swift Playground</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Versione italiana</div>
-            <div class="section-buttons">
-                <div class="button-group">
-                    <a href="https://developer.apple.com/ul/sp0?url=https://appsbyralo.github.io/MaterialsIT/feed.json">
-                        <button>Iscriviti all'app in Swift Playground</button>
-                    </a>
-                </div>
-            </div>
+    <!-- App Prototypes (GitHub Repos) -->
+    <div class="section">
+        <div class="section-title">Apps on GitHub</div>
+        <div class="material-list">
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om.pages" target="_blank">An App About Apps - Hvad handler appen om</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/AppGPT.pages.zip" target="_blank">AppGPT.pages.zip</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Idekompas.key" target="_blank">Idekompas.key</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Keynote%20Apple%20Watch%20prototype.key.zip" target="_blank">Apple Watch prototype</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Keynote%20MacBook%20prototype.key" target="_blank">MacBook prototype</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Keynote%20iPad%20prototype.key.zip" target="_blank">iPad prototype</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Keynote%20iPhone%20prototype.key.zip" target="_blank">iPhone prototype</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/Min%20favorit%20app.pages.zip" target="_blank">Min favorit app</a>
+            <a href="https://github.com/Appsbyralo/An-App-About-Apps/blob/main/One%20Pager%20præsentation.pages" target="_blank">One Pager præsentation</a>
         </div>
     </div>
 
