@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,7 +7,7 @@
   <style>
     :root {
       --page-background: linear-gradient(to right, rgba(217, 201, 254, 1), rgba(86, 193, 255, 1));
-      --text-color: #f5f7ff; /* light lavender-white */
+      --text-color: #f5f7ff;
     }
 
     body {
@@ -20,46 +20,50 @@
     }
 
     h1 {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     img {
       width: 100%;
       max-width: 800px;
-      margin: 20px auto;
+      margin: 0 auto 20px;
       border-radius: 10px;
       display: block;
     }
 
-    .bilingual-container {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      padding: 0 40px;
+    .description {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: left;
     }
 
     .language-section {
-      flex: 1;
-      min-width: 300px;
-      max-width: 500px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     .section-title {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 26px;
+      margin: 40px 0 20px;
       text-decoration: underline;
-      color: var(--text-color);
     }
 
     .material-list a {
       display: block;
-      margin: 6px 0;
+      margin: 6px 0 0;
       font-size: 1rem;
       color: var(--text-color);
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .material-list p {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      color: var(--text-color);
     }
 
     .material-list a:hover {
@@ -77,40 +81,60 @@
   <h1>An App About Apps</h1>
   <img src="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/4.jpeg" alt="App Image"/>
 
-  <div class="bilingual-container">
-    <!-- Danish Column -->
-    <div class="language-section">
-      <div class="section-title">Dansk Version</div>
-      <div class="material-list">
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om%3F%20.pages" download>Hvad handler appen om?</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/One%20Pager%20præsentation.pages" download>One Pager</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Idekompas.key" download>Idekompasset</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Min%20favorit%20app.pages.zip" download>Min favorit app</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPhone%20prototype.key.zip" download>iPhone prototype</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPad%20prototype.key.zip" download>iPad prototype</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20MacBook%20prototype.key" download>MacBook prototype</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20Apple%20Watch%20prototype.key.zip" download>Apple Watch prototype</a>
-        <a href="https://app.box.com/s/eer0ts774nd796cjib55ik3ero9f130v" download>Fra ide til prototype</a>
-        <a href="https://app.box.com/s/sk8e3nu0umpfef5m58kaajzol6sie0ax" download>Kod med Swift</a>
-      </div>
+  <div class="description">
+    <p><strong>An App About Apps</strong> er en læringsoplevelse designet til at introducere elever og undervisere til app-udvikling, kreativ tænkning og digital skabelse. Projektet kombinerer idéudvikling, prototyping og programmering med Apple’s Swift Playgrounds for at gøre elever i stand til selv at udvikle egne app-koncepter fra bunden.</p>
+  </div>
 
-      <!-- Swift Playgrounds -->
-      <div class="section-title" style="margin-top: 40px;">Swift Playgrounds (Dansk)</div>
-      <div class="material-list">
-        <a href="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/AAAADA.swiftpm.zip" download>AAAADA.swiftpm.zip</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/NavigationDA.swiftpm.zip" download>NavigationDA.swiftpm.zip</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/StacksDA.swiftpm.zip" download>StacksDA.swiftpm.zip</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/ThingsDA.swiftpm.zip" download>ThingsDA.swiftpm.zip</a>
-        <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/mig.swiftpm.zip" download>mig.swiftpm.zip</a>
-      </div>
+  <div class="language-section">
+    <div class="section-title">Dansk Materiale</div>
+    <div class="material-list">
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/An%20App%20About%20Apps%20-%20Hvad%20handler%20appen%20om%3F%20.pages" download>Hvad handler appen om?</a>
+      <p>Introduktion til appens formål og læringsmål.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/One%20Pager%20præsentation.pages" download>One Pager</a>
+      <p>En hurtig oversigt over appens indhold og koncept.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Idekompas.key" download>Idekompasset</a>
+      <p>Et værktøj til at generere og strukturere app-idéer.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Min%20favorit%20app.pages.zip" download>Min favorit app</a>
+      <p>En øvelse hvor elever beskriver og reflekterer over deres yndlingsapp.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPhone%20prototype.key.zip" download>iPhone prototype</a>
+      <p>Keynote-skabelon til visualisering af iPhone-apps.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20iPad%20prototype.key.zip" download>iPad prototype</a>
+      <p>Keynote-skabelon til visualisering af iPad-apps.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20MacBook%20prototype.key" download>MacBook prototype</a>
+      <p>Prototype-layout til apps på MacBook.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/materialsDA/main/Keynote%20Apple%20Watch%20prototype.key.zip" download>Apple Watch prototype</a>
+      <p>Prototype-skabelon til Apple Watch-apps.</p>
+
+      <a href="https://app.box.com/s/eer0ts774nd796cjib55ik3ero9f130v" download>Fra ide til prototype</a>
+      <p>En guide der viser hvordan man går fra idé til første app-prototype.</p>
+
+      <a href="https://app.box.com/s/sk8e3nu0umpfef5m58kaajzol6sie0ax" download>Kod med Swift</a>
+      <p>Materiale til at komme i gang med at kode apps i Swift.</p>
     </div>
 
-    <!-- English Column -->
-    <div class="language-section">
-      <div class="section-title">English Version</div>
-      <div class="material-list">
-        <a href="#">(English content coming next)</a>
-      </div>
+    <div class="section-title">Swift Playgrounds (Dansk)</div>
+    <div class="material-list">
+      <a href="https://raw.githubusercontent.com/Appsbyralo/An-App-About-Apps/main/AAAADA.swiftpm.zip" download>AAAADA.swiftpm.zip</a>
+      <p>Hovedprojektet til undervisning i Swift Playground.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/NavigationDA.swiftpm.zip" download>NavigationDA.swiftpm.zip</a>
+      <p>Modul der viser hvordan navigation i en app fungerer.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/StacksDA.swiftpm.zip" download>StacksDA.swiftpm.zip</a>
+      <p>Modul om brug af Stack Views i SwiftUI-layout.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/ThingsDA.swiftpm.zip" download>ThingsDA.swiftpm.zip</a>
+      <p>Et mini-projekt til at lære komponentstruktur i apps.</p>
+
+      <a href="https://raw.githubusercontent.com/Appsbyralo/AAAADA/main/mig.swiftpm.zip" download>mig.swiftpm.zip</a>
+      <p>Et personligt projekt hvor eleven fortæller om sig selv med app-komponenter.</p>
     </div>
   </div>
 
